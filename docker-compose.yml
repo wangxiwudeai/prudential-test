@@ -1,0 +1,32 @@
+version: '3'
+services: 
+  frontend: 
+    build: 
+      context: ./frontend/jianshu-demo
+      dockerfile: Dockerfile
+    container_name: frontend1
+    environment: 
+      NODE_ENV: production
+    ports:
+      - 13001:80
+  backend:
+    build: 
+      context: ./backend/prudential-test
+      dockerfile: Dockerfile
+    environment: 
+      MONGO_HOST: mongodb1
+      MONGO_DATABASE: admin
+      MONGO_USER: admin
+      MONGO_PWD: 123456
+      MONGO_PORT: 27017
+    depends_on:
+    - mongodb
+    ports:
+      - 13002:80
+    container_name: backend1
+  mongodb: 
+    image: mongo:latest
+    volumes:
+    - ./mongodb:/data/db
+    container_name: mongodb1
+    

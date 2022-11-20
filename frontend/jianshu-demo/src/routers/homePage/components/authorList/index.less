@@ -1,0 +1,62 @@
+.author-list {
+    .header {
+        display        : flex;
+        justify-content: space-between;
+        color: #969696;
+
+        .title {
+            display: inline-block;
+        }
+
+        .change {
+            user-select: none;
+            cursor: pointer;
+            display: inline-block;
+        }
+    }
+
+    .list {
+        .author-item {
+            display        : flex;
+            justify-content: space-between;
+            padding        : 8px 0;
+
+            .left {
+                display    : flex;
+                align-items: center;
+            }
+
+            .left>* {
+                display: inline-block;
+            }
+
+            .img {
+                width           : 48px;
+                height          : 48px;
+                border-radius   : 24px;
+                background-color: #e0e7c8;
+                color           : #666;
+                line-height     : 48px;
+                text-align      : center;
+                font-size       : 18px;
+                margin-right    : 12px;
+            }
+            .name {
+                color: #333;
+            }
+            .info {
+                color: #969696;
+                margin-top: 2px;
+                font-size: 12px;
+            }
+
+            .follow {
+                .ant-btn {
+                    border : 0;
+                    padding: 0;
+                    color  : #42c02e;
+                }
+            }
+        }
+    }
+}

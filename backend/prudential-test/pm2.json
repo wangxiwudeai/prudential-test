@@ -1,0 +1,13 @@
+{
+  "name": "prudential-test",
+  "script": "dist/main.js",
+  "instances": "1",
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "out_file": "/data/log/out.log",
+  "error_file": "/data/log/error.log",
+  "env_production": {
+    "NODE_ENV": "production"
+  }
+}

@@ -1,0 +1,8 @@
+show collections
+db.user.updateMany({}, {$rename: {"diamond": "assets"}})
+db.user.updateMany({}, {"$rename": {"diamond": "assets"}})
+db.user.updateOne({}, {"$rename": {"diamond": "assets"}})
+db.user.updateOne({}, {$rename: {"diamond": "assets"}})
+db.user.updateOne({}, {$rename: {"diamond": "assets"}}, false, true)
+db.user.update({}, {$rename: {"diamond": "assets"}}, false, true)
+use admin

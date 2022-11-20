@@ -22,7 +22,7 @@ backEnd: `Nodejs, NestJs`;
 database: `Mongo`;  
 
 ### Time constraint
-    because of the time constraint, no more code for security and error handling and testing. some config is hard coding in the source code. 
+because of the time constraint, no more code for security and error handling and testing. some config is hard coding in the source code. 
 
 ### start project in local environment  
 run :
@@ -101,7 +101,7 @@ Get user article list .
 | id  | account | name | like | wordCount | assets |
 
 |  2. article   |||||||||||
-|  ----  | ----  | ----  | ----  | ----  | ----  | ----  | ----  | ----  | ----  | ----  |
+|  ------  | ----  | ----  | ----  | ----  | ----  | ----  | ----  | ----  | ----  | ----  |
 | id  | abstract | author | authorName | content | createOn | diamond | like | read | title |wordCount |
 
 ---
